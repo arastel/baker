@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta name="referrer" content="origin">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SNSM Hauts de Seine</title>
@@ -13,395 +14,484 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/from_timber.css">
+
     <link rel="icon" href="img/icon.png">
     <!-- =======================================================
-        Theme Name: Baker
-        Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-        Author: BootstrapMade.com
-        Author URL: https://bootstrapmade.com
+    Theme Name: Baker
+    Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
     ======================================================= -->
-  </head>
-  <body>
+</head>
+<body>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="col-xs-10 modal-title" id="exampleModalLabel">Demande de rappel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="row"> -->
+                    <form method="POST" action="http://formspree.io/***">
+                        <select required id="select" type="text" class="col-md-12 col-xs-12 Subject" name='_subject'>
+                            <option value="" disabled selected>Objet de l'appel</option>
+                            <option value="valeur1">Poste de secours terrestre</option>
+                            <option value="valeur2">Poste de secours nautique</option>
+                            <option value="valeur3">Formation Premiers Secours</option>
+                            <option value="valeur3">Demande de renseignements</option>
+                            <option value="valeur3">Soutien financier</option>
+                            <option value="valeur3">Autre</option>
+                        </select>
+                        <input required type="tel" class="col-xs-12 Email" name='Message' placeholder='Votre numéro de téléphone'/>
+                    <!-- </div> -->
+                        <!-- <input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Subject'/> -->
+                    </form>
+                <!-- </div> -->
+                <br><br><br><br>
+                <strong>Attention : </strong>Nous ne rappelons que des numéros locaux, non spéciaux, gratuits.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary">Appelez-moi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+
+
 
     <div class="loader"></div>
     <div id="myDiv">
-    <!--HEADER-->
-    <div class="header">
-      <div class="bg-color">
-        <header id="main-header">
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">SNSM <span class="logo-dec">IDF</span></a>
+        <!--HEADER-->
+        <div class="header">
+            <div class="bg-color">
+                <header id="main-header">
+                    <nav class="navbar navbar-default navbar-fixed-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">SNSM <span class="logo-dec">IDF</span></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#main-header">ACCUEIL</a></li>
+                                    <!-- <li class=""><a href="#feature">PRESTATIONS</a></li> -->
+                                    <li class=""><a href="#service">HISTORIQUE</a></li>
+                                    <li class=""><a href="#portfolio">POINTS FORTS</a></li>
+                                    <li class=""><a href="#testimonial">PARTENAIRES</a></li>
+                                    <!-- <li class=""><a href="#blog">ACTUALITES</a></li> -->
+                                    <li class=""><a href="#contact">CONTACT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="banner-info text-center wow fadeIn delay-05s">
+                                <h1 class="bnr-title">100 secouristes prêts à intervenir</h1>
+                                <h2 class="bnr-sub-title">Sollicitez la SNSM ! </h2>
+                                <p class="bnr-para">Présente dans les Hauts de Seine depuis 1958, la SNSM dispose de sauveteurs hautement qualifiés.<br>Dotés d'une grande expérience, il sauront encadrer au mieux vos événements terrestres ou nautiques.</p>
+                                <div class="brn-btn">
+                                    <a href="#" class="btn btn-download">Postes de secours</a>
+                                    <a href="#" class="btn btn-more">Formations PS</a>
+                                </div>
+                                <div class="overlay-detail">
+                                    <a href="#feature"><i class="fa fa-angle-down"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#main-header">ACCUEIL</a></li>
-                <li class=""><a href="#feature">PRESTATIONS</a></li>
-                <li class=""><a href="#service">COMPETENCES</a></li>
-                <li class=""><a href="#portfolio">POINTS FORTS</a></li>
-                <li class=""><a href="#testimonial">NOS DSNP</a></li>
-                <li class=""><a href="#blog">ACTUALITES</a></li>
-                <li class=""><a href="#contact">CONTACT</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        </header>
-        <div class="wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="banner-info text-center wow fadeIn delay-05s">
-              <h1 class="bnr-title">100 sauveteurs prêts à intervenir</h1>
-              <h2 class="bnr-sub-title">Sollicitez la SNSM ! </h2>
-              <p class="bnr-para">Présente dans les hauts de Seine depuis 1958, la SNSM dispose de sauveteurs hautement qualifiées.<br>Dotés d'une grande expérience, il sauront encadrer au mieux vos événements terrestres ou nautiques.</p>
-              <div class="brn-btn">
-                <a href="#" class="btn btn-download">Postes de secours</a>
-                <a href="#" class="btn btn-more">Formations PS</a>
-              </div>
-              <div class="overlay-detail">
-                <a href="#feature"><i class="fa fa-angle-down"></i></a>
-              </div>
-            </div>
-          </div>
         </div>
+        <!--/ HEADER-->
+        <!---->
+        <section id="feature" class="section-padding wow fadeIn delay-05s">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wrap-item text-center">
+                    <div class="item-img">
+                    <img src="img/snsm_64.png">
+                </div>
+                <h3 class="pad-bt15">Une expérience indéniable</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div> -->
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="wrap-item text-center">
+                <div class="item-img">
+                    <img src="img/pma_64.png">
+                </div>
+                <h3 class="pad-bt15">Postes de secours terrestres</h3>
+                <p>Plus de 100 secouristes sont mobilisables dès maintenant en Ile de France pour assurer la sécurité de votre événement</p>
+            </div>
         </div>
-      </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="wrap-item text-center">
+                <div class="item-img">
+                    <img src="img/irb_64.png">
+                </div>
+                <h3 class="pad-bt15">Postes de secours nautiques</h3>
+                <p>80 sauveteurs hautement qualifiés arment chaque semaine des postes de secours nautiques en milieux naturels (Seine, Marne, Oise...)</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="wrap-item text-center">
+                <div class="item-img">
+                    <img src="img/pse_64.png">
+                </div>
+                <h3 class="pad-bt15">Formations Premiers Secours</h3>
+                <p>19 moniteurs de secourisme forment le public aux Gestes qui Sauvent, aux Premiers Secours Civiques et aux Premiers Secours en Equipe</p>
+            </div>
+        </div>
     </div>
-    <!--/ HEADER-->
-    <!---->
-    <section id="feature" class="section-padding wow fadeIn delay-05s">
-      <div class="container">
+</div>
+</section>
+<!---->
+<!---->
+<section id="service" class="section-padding wow fadeInUp delay-05s">
+    <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/snsm_64.png">
-              </div>
-              <h3 class="pad-bt15">Une expérience indéniable</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col-md-12 text-center">
+                <h2 class="service-title pad-bt15">Qui sommes-nous ?</h2>
+                <p class="sub-title pad-bt15">Association agréée de Sécurité Civile – Basée dans les Hauts de Seine</p>
+                <hr class="bottom-line">
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/pma_64.png">
-              </div>
-              <h3 class="pad-bt15">Postes de secours terrestres</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/irb_64.png">
-              </div>
-              <h3 class="pad-bt15">Postes de secours nautiques</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/pse_64.png">
-              </div>
-              <h3 class="pad-bt15">Formations Premiers Secours</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---->
-    <!---->
-    <section id="service" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">What We Do?</h2>
-            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>D</span>esign And Developement</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>W</span>ebsite Maintenance</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>S</span>eo Optimization</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>D</span>igital Marketing</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">Learn more...</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <section id="portfolio" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">Nos points forts</h2>
-            <p class="sub-title pad-bt15">Nos sauveteurs bénévoles s'entrainent constament en Seine avec du matériel de pointe<br>Nous disposons de plus de quinze bateaux adaptés au sauvetage.</p>
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/cergy.jpg" class="img-responsive">
-              <figcaption>
-                  <h2>Entrainements réguliers</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/dartagnan.jpg" class="img-responsive">
-              <figcaption>
-                  <h2>100+ sauveteurs</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/irb.jpg" class="img-responsive">
-              <figcaption>
-                  <h2>Matériel adapté</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/nd.jpg" class="img-responsive">
-              <figcaption>
-                  <h2>Grande connaissance de la Seine</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/philou.jpg" class="img-responsive">
-              <figcaption>
-                  <h2>Professionnalisme</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/sup.jpg" class="img-responsive">
-              <figcaption>
-                  <h2>Mobilité</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---->
-    <!---->
-    <section id="testimonial" class="wow fadeInUp delay-05s">
-      <div class="bg-testicolor">
-        <div class="container section-padding">
-        <div class="row">
-          <div class="testimonial-item">
-            <ul class="bxslider">
-              <li>
-                <blockquote>
-                  <img src="img/thumb.png" class="img-responsive">
-                  <p>Come a day there won't be room for naughty men like us to slip about at all. This job goes south, there well may not be another. </p>
-                </blockquote>
-                <small>Shaun Paul, Client</small>
-              </li>
-              <li>
-                <blockquote>
-                  <img src="img/thumb.png" class="img-responsive">
-                  <p>So here is us, on the raggedy edge. Don't push me, and I won't push you. </p>
-                </blockquote>
-                <small>Marry Smith, Client</small>
-              </li>
-              <li>
-                <blockquote>
-                  <img src="img/thumb.png" class="img-responsive">
-                  <p>Come a day there won't be room for naughty men like us to slip about at all. This job goes south, there well may not be another.</p>
-                </blockquote>
-                <small>Vivek Singh, Client</small>
-              </li>
-              <li>
-                <blockquote>
-                  <img src="img/thumb.png" class="img-responsive">
-                  <p>So here is us, on the raggedy edge. Don't push me, and I won't push you.</p>
-                </blockquote>
-                <small>John Doe, Client</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <!---->
-    <section id="blog" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">Latest from our blog</h2>
-            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="blog-sec">
-              <div class="blog-img">
-                <a href="">
-                  <img src="img/blog01.jpg" class="img-responsive">
-                </a>
-              </div>
-              <div class="blog-info">
-                <h2>This is Lorem ipsum heading.</h2>
-                <div class="blog-comment">
-                    <p>Posted In: <span>Legal Advice</span></p>
-                    <p>
-                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
+            <div class="col-md-4 col-sm-6-center col-xs-8-center">
+                <div class="wrap-item text-center">
+                    <div class="item-img">
+                        <img src="img/cfi_t.png" class="img-responsive center-block">
+                    </div>
                 </div>
-                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
-                <a href="" class="read-more">Read more →</a>
-              </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="blog-sec">
-              <div class="blog-img">
-                <a href="">
-                  <img src="img/blog02.jpg" class="img-responsive">
-                </a>
-              </div>
-              <div class="blog-info">
-                <h2>This is Lorem ipsum heading.</h2>
-                <div class="blog-comment">
-                    <p>Posted In: <span>Legal Advice</span></p>
-                    <p>
-                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
+            <div class="col-lg-8 hidden-md hidden-sm hidden-xs">
+                <div class="service-item text-justify">
+                    <br>
                 </div>
-                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
-                <a href="" class="read-more">Read more →</a>
-              </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="blog-sec">
-              <div class="blog-img">
-                <a href="">
-                  <img src="img/blog03.jpg" class="img-responsive">
-                </a>
-              </div>
-              <div class="blog-info">
-                <h2>This is Lorem ipsum heading.</h2>
-                <div class="blog-comment">
-                    <p>Posted In: <span>Legal Advice</span></p>
-                    <p>
-                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
+            <div class="col-md-8 col-sm-12-center col-xs-12-center">
+                <div class="service-item text-justify">
+                    Nous sommes une <strong>entité autonome des Sauveteurs en Mer</strong> (SNSM) - association reconnue d'utilité publique assurant le sauvetage des vies humaines en mer. Nous formons le public francilien aux <strong>premiers secours</strong>, au sauvetage et sommes un <strong>maillon de la sécurité civile</strong> en Ile-de-France.<br><br>
+                    <strong>Initié en 1958</strong>, le Centre de Formation d'Ile-de-France forme dès cette époque des bénévoles secouriste-marins. Ils sont alors à disposition des organisateurs de manifestations nautiques pour assurer la surveillance des plans d'eau.<br><br>
+                    De nombreuses évolutions techniques et législatives se sont succédées depuis sa création mais notre Centre de Formation a toujours su évoluer et se moderniser. En 60 ans, nous avons formé <strong>plus de 1500 sauveteurs</strong> soit autant de <strong>secouristes</strong>.<br><br>
+                    Animé <strong>uniquement</strong> par des <strong>bénévoles</strong>, notre centre assure continuellement des postes de secours nautiques ou terrestres afin de conserver la <strong>qualité opérationnelle</strong> de ses équipes
+                    <!-- <a href="">learn more...</a> -->
                 </div>
-                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
-                <a href="" class="read-more">Read more →</a>
-              </div>
             </div>
-          </div>
+            <!-- <div class="col-md-8 col-sm-12-center col-xs-12-center">
+            <div class="service-item text-justify">
+            <h3><span>F</span>ormation et intervention</h3>
+            <p>CFI signifie Centre de Formation et d'Intervention. Animé uniquement par des bénévoles, notre centre assure continuellement des postes de secours nautiques ou terrestres afin de conserver la qualité opérationnelle de ses équipes. </p>
         </div>
-      </div>
-    </section>
-    <!---->
-    <section id="contact" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center white">
-            <h2 class="service-title pad-bt15">CONTACTEZ NOUS MAINTENANT</h2>
-            <p class="sub-title pad-bt15">Vous souhaitez mettre en place une <strong>formation pour vos collaborateurs</strong> ou bien faire <strong>encadrer un de vos événements</strong> ?<br>Utilisez le formulaire ci-dessous pour nous faire part de votre demande.</p>
-            <hr class="bottom-line white-bg">
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="loction-info white">
-              <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>4 rue de St Cloud<br>92310 SEVRES</p>
-              <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>contact.cfipif@snsm.org</p>
-              <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>01 46 29 01 43</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="contact-form">
-                <div id="sendmessage">Votre message vient d'être envoyé. Nous vous répondrons aussi vite que possible !</div>
-                <div id="errormessage"></div>
-                <form action="" method="post" role="form" class="contactForm">
-                    <div class="col-md-6 padding-right-zero">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Societe" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validation"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
-                        </div>
-                      <button type="submit" class="btn btn-primary btn-submit">ENVOYER</button>
-                    </div>
-                </form>
+    </div> -->
+    <!-- <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="service-item">
+    <h3><span>W</span>ebsite Maintenance</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="">learn more...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="service-item">
+<h3><span>S</span>eo Optimization</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<a href="">learn more...</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="service-item">
+<h3><span>D</span>igital Marketing</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<a href="">Learn more...</a>
+</div>
+</div> -->
+</div>
+</div>
+</section>
+<!---->
+<!---->
+<!---->
+<!---->
 
+<section id="portfolio" class="section-padding wow fadeInUp delay-05s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="service-title pad-bt15">Nos points forts</h2>
+                <p class="sub-title pad-bt15">Nous avons plusieurs compétences. N'hésitez pas à filter nos atouts par centre d'intérêt.</p>
+                <hr class="bottom-line">
             </div>
-          </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15 rounded">
+                <figure>
+                    <img src="img/cergy.jpg" class="img-responsive">
+                    <figcaption>
+                        <h2>Entrainements réguliers</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+                <figure>
+                    <img src="img/dartagnan.jpg" class="img-responsive">
+                    <figcaption>
+                        <h2>100+ sauveteurs</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+                <figure>
+                    <img src="img/irb.jpg" class="img-responsive">
+                    <figcaption>
+                        <h2>Matériel adapté</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+                <figure>
+                    <img src="img/nd.jpg" class="img-responsive">
+                    <figcaption>
+                        <h2>Grande connaissance de la Seine</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+                <figure>
+                    <img src="img/philou.jpg" class="img-responsive">
+                    <figcaption>
+                        <h2>Professionnalisme</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+                <figure>
+                    <img src="img/sup.jpg" class="img-responsive">
+                    <figcaption>
+                        <h2>Mobilité</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
-      </div>
-    </section>
-    <!---->
-    <!---->
-    <footer id="footer">
-      <div class="container">
+    </div>
+</section>
+<!---->
+<!---->
+
+<!-- PORTFOLIO was here -->
+<section id="contact_" class="section-padding wow fadeInUp delay-05s">
+    <div id="contact">
+        <div class="line5">
+            <div class="overlay_line">
+                <div class="container">
+                    <div class="row Ama">
+                        <div class="col-md-12-center text-center">
+                            <h2>SOLLICITEZ-NOUS !</h3>
+                                <p>Pour encadrer votre prochain événement ou former vos collaborateurs aux premiers secours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-xs-12 forma">
+                        <form method="POST" action="http://formspree.io/***">
+                        <!-- <div class="col-md-6 col-sm-12 col-xs-12"> -->
+                            <input required type="text" class="col-md-5 col-sm-12 col-xs-12 name" name='name' placeholder='Nom complet*'/>
+                        <!-- </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12"> -->
+                            <input required type="email" class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12 Email" name='_replyto' placeholder='Email *'/>
+                        <!-- </div> -->
+                            <!-- <input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Subject'/> -->
+                            <select required id="select" type="text" class="col-md-12 col-xs-12 Subject" name='_subject'>
+                                <option value="" disabled selected>Objet de votre demande *</option>
+                                <option value="valeur1">Poste de secours terrestre</option>
+                                <option value="valeur2">Poste de secours nautique</option>
+                                <option value="valeur3">Formation Premiers Secours</option>
+                                <option value="valeur3">Demande de renseignements</option>
+                                <option value="valeur3">Soutien financier</option>
+                                <option value="valeur3">Autre</option>
+                            </select>
+                            <textarea required type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Votre message *'></textarea>
+                            <div class="cBtn col-xs-12 btn">
+                                <ul>
+                                    <!-- <button type="submit" class="btn btn-primary btn-submit">ENVOYER</button>
+                                    <li class="btn btn-primary btn-submit"><a href="#"><i class="fa fa-times"></i>clear form</a></li>
+                                    <li class="send"><a href="#"><i class="fa fa-share"></i>Send Message</a></li> -->
+                                    <input type="reset" value="EFFACER"  class="btn btn-primary btn-clear"/>
+                                    <input type="submit" value="ENVOYER"  class="btn btn-primary btn-submit"/>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4 hidden-sm hidden-xs loc_infos" style="margin-top:15px;">
+                        <!-- ajustement par rapport au formulaire -->
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 loc_infos">
+                        <div class="loction-info">
+                            <div class="col-md-12 col-sm-6 col-xs-12">
+                                <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>4 rue de St Cloud<br>92310 SEVRES</p>
+                                <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>contact.cfipif@snsm.org</p>
+                            </div>
+                            <div class="col-sm-offset-0 col-md-12 col-sm-offset-1 col-sm-5 col-xs-12">
+                                <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>01 46 29 01 43</p>
+                                <p><a href="#"><i class="fa fa-twitter fa-fw pull-left fa-2x"></i>Twitter</p></a>
+                                <p><a href="#"><i class="fa fa-facebook-square fa-fw pull-left fa-2x"></i>Facebook</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row rappel">
+                    <div class="col-xs-12 hidden-sm hidden-md hidden-lg text-center call_small">
+                            <p><strong>Vous avez besoin d'une réponse rapide ? </strong></p>
+                        <!-- <a href="">learn more...</a> -->
+                    </div>
+                    <div class="col-md-offset-2 col-sm-offset-1 col-md-5 col-sm-6 hidden-xs vcenter">
+                            <p><strong>Vous avez besoin d'une réponse rapide ? </strong></p>
+                        <!-- <a href="">learn more...</a> -->
+                    </div><!--
+                    --><div class="col-md-4 col-sm-4 hidden-xs vcenter">
+                        <a data-toggle="modal" href="#myModal" class="btn btn-download"><i class="fa fa-phone fa-fw pull-left fa-2x hidden-sm"></i>Demandez à être rappelé </a>
+                    </div>
+                    <div class="col-xs-12 hidden-sm hidden-md hidden-lg call_small text-center">
+                        <a data-toggle="modal" href="#myModal" class="btn btn-download">Demandez à être rappelé</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- <section id="contact" class="section-padding wow fadeInUp delay-05s">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-12 text-center white">
+        <h2 class="service-title pad-bt15">CONTACTEZ NOUS MAINTENANT</h2>
+        <p class="sub-title pad-bt15">Vous souhaitez mettre en place une <strong>formation pour vos collaborateurs</strong> ou bien faire <strong>encadrer un de vos événements</strong> ?<br>Utilisez le formulaire ci-dessous pour nous faire part de votre demande.</p>
+        <hr class="bottom-line white-bg">
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="loction-info white">
+    <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>4 rue de St Cloud<br>92310 SEVRES</p>
+    <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>contact.cfipif@snsm.org</p>
+    <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>01 46 29 01 43</p>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="contact-form">
+<div id="sendmessage">Votre message vient d'être envoyé. Nous vous répondrons aussi vite que possible !</div>
+<div id="errormessage"></div>
+<form action="" method="post" role="form" class="contactForm">
+<div class="col-md-6 padding-right-zero">
+<div class="form-group">
+<input type="text" name="name" class="form-control" id="name" placeholder="Societe" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+<div class="validation"></div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<input type="email" class="form-control" name="email" id="email" placeholder="Votre email" data-rule="email" data-msg="Please enter a valid email" />
+<div class="validation"></div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+<div class="validation"></div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+<div class="validation"></div>
+</div>
+<button type="submit" class="btn btn-primary btn-submit">ENVOYER</button>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</section> -->
+
+<section id="testimonial" class="wow fadeInUp delay-05s">
+    <div class="bg-testicolor">
+        <div class="container section-padding">
+            <div class="row">
+                <div class="testimonial-item">
+                    <ul class="bxslider">
+                        <li>
+                            <blockquote>
+                                <img src="img/thumb.png" class="img-responsive">
+                                <p>Come a day there won't be room for naughty men like us to slip about at all. This job goes south, there well may not be another. </p>
+                            </blockquote>
+                            <small>Shaun Paul, Client</small>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <img src="img/thumb.png" class="img-responsive">
+                                <p>So here is us, on the raggedy edge. Don't push me, and I won't push you. </p>
+                            </blockquote>
+                            <small>Marry Smith, Client</small>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <img src="img/thumb.png" class="img-responsive">
+                                <p>Come a day there won't be room for naughty men like us to slip about at all. This job goes south, there well may not be another.</p>
+                            </blockquote>
+                            <small>Vivek Singh, Client</small>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <img src="img/thumb.png" class="img-responsive">
+                                <p>So here is us, on the raggedy edge. Don't push me, and I won't push you.</p>
+                            </blockquote>
+                            <small>John Doe, Client</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---->
+<!---->
+<footer id="footer">
+    <div class="container">
         <div class="row text-center">
-          <p>&copy; Baker Theme. All Rights Reserved.</p>
-          <div class="credits">
-            <!--
+            <p>&copy; Baker Theme. All Rights Reserved.</p>
+            <div class="credits">
+                <!--
                 All the links in the footer should remain intact.
                 You can delete the links only if you purchased the pro version.
                 Licensing information: https://bootstrapmade.com/license/
@@ -409,18 +499,21 @@
             -->
             Designed  by <a href="https://bootstrapmade.com/">Bootstrap Themes</a>
         </div>
-        </div>
-      </div>
-    </footer>
-    <!---->
-  </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
-
-  </body>
+    </div>
+</div>
+</footer>
+<!---->
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="contactform/contactform.js"></script>
+<!-- <script>$('#exampleModal').on('shown.bs.modal', function () {
+$('#myModal').focus()
+})
+</script> -->
+</body>
 </html>

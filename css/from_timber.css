@@ -1,0 +1,148 @@
+:root {
+	--lgrey-sns:#E9E9E9;
+	--dgrey-sns:#424242;
+	--dblue-sns:#03275A;
+	--lblue-sns:#1A7DD7;
+	--yellow-sns:#F2B809;
+	--orange-sns:#F37402;
+
+	--green-unknown:#002F2F;
+	--grey-unknown:#949494;
+}
+
+
+/**/
+/*.mNews{
+	margin-top: 26px !important;
+	margin-left: -49px !important;
+}*/
+.overlay_line{
+	/*margin-top: 127px;
+	margin-bottom: 94px;
+	background:black;*/
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	overflow: hidden;
+	height:100%;
+}
+.line5 .Ama{
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+.line5{
+    padding-right: 0px;
+    padding-left: 0px;
+	margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height:100%;
+	background: url(../img/base.jpg) center center no-repeat;
+	/*background: url(../images/line5Bg.jpg) center center no-repeat;	*/
+	/*background:#3f2d28;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/**/
+.forma{
+	/*margin-bottom: -80px;*/
+	margin-bottom: 20px;
+	z-index: 10;
+	margin-top: 48px;
+}
+.forma input, .forma select, .modal-body input, .modal-body select{
+	/*margin-right:10px;*/
+	border-radius:4px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border:0px;
+	font-family: 'Roboto', 'sans-serif';
+	font-weight: 300;
+	font-size:13px;
+	color:#555555;
+	background:#ededed;
+}
+input:focus{
+	/*border:0;*/
+	outline:none;
+}
+textarea:focus{
+	/*border:0;*/
+	outline:none;
+}
+.name{
+	margin-bottom:10px;
+	/*margin-right: 10px;*/
+	/*max-width:433px;*/
+}
+.Email{
+	margin-bottom:10px;
+	/*max-width:433px;*/
+}
+.Subject{
+	margin-bottom:10px;
+	/*max-width: 816px;*/
+}
+
+textarea {
+	border-radius:4px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border:0px;
+	font-family: 'Roboto', 'sans-serif';
+	font-weight: 300;
+	font-size:13px;
+	color:#555555;
+	background:#ededed;
+	border:none;
+    /*max-width: 816px;*/
+	height: 153px;
+    resize: none;
+   }
+.forma input:focus, .forma textarea:focus{
+	background:#dfdfdf;
+	border:0;
+}
+.forma .cBtn a{
+	font-family: 'Roboto', 'sans-serif';
+	font-weight: 700;
+	font-size:13px;
+	color:#fff;
+}
+
+.forma .cBtn ul{
+	margin-left: -15px;
+	margin-top: 6px;
+	padding-left:0;
+	margin-bottom: 0;
+}
+.forma .cBtn ul i{
+	padding-right: 10px;
+}
+
+.forma .cBtn .clear , .cBtn .send{
+	margin-bottom: 0;
+	margin-top: 4px;
+	padding: 10px;
+	padding-right: 17px;
+	padding-left: 17px
+
+}
+.forma .cBtn .clear  a, .cBtn .send a{
+	font-family: 'Roboto', 'sans-serif';
+	font-weight: 700;
+}
+.forma .cBtn .send{
+	box-shadow: 0px 2px 0px 0px var(--orange-sns);
+	background:var(--lorange-sns) ;
+}
+.forma .cBtn .send:hover{
+	background:#2f2f2f;
+	box-shadow: 0px 2px 0px 0px #000 ;
+}
