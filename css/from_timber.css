@@ -159,13 +159,14 @@ textarea {
 
 }
 .soc {
-	margin-top: 20px;
+	margin-top: 30px;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
 .soc a{
 	color: white;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	text-align: center;
 }
 
@@ -177,27 +178,3 @@ textarea {
 .soc li {
 	padding-top: 10px;
 }
-/*.soc1 a{
-	display: inline-block;
-	height: 17px;
-	width: 17px;
-	background: url(../img/socIcons.png)no-repeat;
-	margin-top: 15px;
-	margin-left: 2px;
-}
-.soc1{
-	width: 52px;
-	height: 52px;
-	border: 2px solid #fdfdfc;
-	border-radius: 50px;
-}
-.soc1 a:hover{
-	border:0;
-	background: url(../img/socIcons.png)no-repeat;
-	box-shadow: none;
-}
-.soc1:hover{
-	cursor:pointer;
-	border: 2px solid #1c1c1c;
-	background:#1c1c1c;
-}*/
