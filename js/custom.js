@@ -22,6 +22,36 @@
         }
     });
 
+    // Navigation scrolls
+    $('.downMenu li a').bind('click', function(event) {
+        $('.downMenu li').removeClass('active');
+        $(this).closest('li').addClass('active');
+        var $anchor = $(this);
+        var nav = $($anchor.attr('href'));
+        if (nav.length) {
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+
+        event.preventDefault();
+        }
+    });
+
+    // CTA scrolls
+    $('.brn-btn a').bind('click', function(event) {
+        // $('.brn-btn li').removeClass('active');
+        // $(this).closest('li').addClass('active');
+        var $anchor = $(this);
+        var nav = $($anchor.attr('href'));
+        if (nav.length) {
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+
+        event.preventDefault();
+        }
+    });
+
     // About section scroll
     $(".overlay-detail a").on('click', function(event) {
         event.preventDefault();

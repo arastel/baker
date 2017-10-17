@@ -4,7 +4,7 @@
     <meta name="referrer" content="origin">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SNSM Hauts de Seine</title>
+    <title>SNSM Ile de France</title>
     <meta name="description" content="Site vitrine SNSM CFI PIF">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
@@ -51,7 +51,6 @@
                         </select>
                         <input required type="tel" class="col-xs-12 Email" name='Message' placeholder='Votre numéro de téléphone'/>
                     <!-- </div> -->
-                        <!-- <input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Subject'/> -->
                     </form>
                 <!-- </div> -->
                 <br><br><br><br>
@@ -70,7 +69,7 @@
 
 
     <div class="loader"></div>
-    <div id="myDiv">
+    <!-- <div id="myDiv"> -->
         <!--HEADER-->
         <div class="header">
             <div class="bg-color">
@@ -88,10 +87,10 @@
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="active"><a href="#main-header">ACCUEIL</a></li>
-                                    <!-- <li class=""><a href="#feature">PRESTATIONS</a></li> -->
-                                    <li class=""><a href="#service">HISTORIQUE</a></li>
-                                    <li class=""><a href="#portfolio">POINTS FORTS</a></li>
-                                    <li class=""><a href="#testimonial">PARTENAIRES</a></li>
+                                    <li class=""><a href="#presta">PRESTATIONS</a></li>
+                                    <li class=""><a href="#histoire">HISTORIQUE</a></li>
+                                    <li class=""><a href="#atouts">POINTS FORTS</a></li>
+                                    <!-- <li class=""><a href="#testimonial">PARTENAIRES</a></li> -->
                                     <!-- <li class=""><a href="#blog">ACTUALITES</a></li> -->
                                     <li class=""><a href="#contact">CONTACT</a></li>
                                 </ul>
@@ -107,11 +106,12 @@
                                 <h2 class="bnr-sub-title">Sollicitez la SNSM ! </h2>
                                 <p class="bnr-para">Présente dans les Hauts de Seine depuis 1958, la SNSM dispose de sauveteurs hautement qualifiés.<br>Dotés d'une grande expérience, il sauront encadrer au mieux vos événements terrestres ou nautiques.</p>
                                 <div class="brn-btn">
-                                    <a href="#" class="btn btn-download">Postes de secours</a>
-                                    <a href="#" class="btn btn-more">Formations PS</a>
+                                    <a href="#presta"  class="btn btn-download" data-toggle="collapse"  data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Postes de secours</a>
+                                    <a href="#presta" class="btn btn-more" data-toggle="collapse"  data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Formations PS</a>
+
                                 </div>
                                 <div class="overlay-detail">
-                                    <a href="#feature"><i class="fa fa-angle-down"></i></a>
+                                    <a href="#presta"><i class="fa fa-angle-down"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -121,28 +121,25 @@
         </div>
         <!--/ HEADER-->
         <!---->
-        <section id="feature" class="section-padding wow fadeIn delay-05s">
+        <section id="presta" class="section-padding wow fadeIn delay-05s">
             <div class="container">
-                <div class="row">
-                    <!-- <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wrap-item text-center">
-                    <div class="item-img">
-                    <img src="img/snsm_64.png">
-                </div>
-                <h3 class="pad-bt15">Une expérience indéniable</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="row hovereffect">
+        <div class="col-md-4 col-sm-12 col-xs-12 hoverelement">
+            <div class="my_overlay">
             </div>
-        </div> -->
-        <div class="col-md-4 col-sm-12 col-xs-12">
             <div class="wrap-item text-center">
                 <div class="item-img">
-                    <img src="img/pma_64.png">
+                    <!-- <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> -->
+                        <img src="img/pma_64.png">
+                    <!-- </a> -->
                 </div>
                 <h3 class="pad-bt15">Postes de secours terrestres</h3>
                 <p>Plus de 100 secouristes sont mobilisables dès maintenant en Ile de France pour assurer la sécurité de votre événement</p>
             </div>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="col-md-4 col-sm-12 col-xs-12 hoverelement">
+            <div class="my_overlay">
+            </div>
             <div class="wrap-item text-center">
                 <div class="item-img">
                     <img src="img/irb_64.png">
@@ -151,21 +148,35 @@
                 <p>80 sauveteurs hautement qualifiés arment chaque semaine des postes de secours nautiques en milieux naturels (Seine, Marne, Oise...)</p>
             </div>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="col-md-4 col-sm-12 col-xs-12 hoverelement">
+            <div class="my_overlay">
+            </div>
             <div class="wrap-item text-center">
                 <div class="item-img">
                     <img src="img/pse_64.png">
                 </div>
                 <h3 class="pad-bt15">Formations Premiers Secours</h3>
-                <p>19 moniteurs de secourisme forment le public aux Gestes qui Sauvent, aux Premiers Secours Civiques et aux Premiers Secours en Equipe</p>
+                <p>23 moniteurs de secourisme forment différents publics aux gestes de secours et délivrent les diplômes correspondants</p>
             </div>
         </div>
     </div>
+
+    <!-- Essai de collapse -->
+
+    <div class="row">
+        <div class="collapse" id="collapseExample">
+            <div class="wrap-item text-center">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin d'essai -->
 </div>
 </section>
 <!---->
 <!---->
-<section id="service" class="section-padding wow fadeInUp delay-05s">
+<section id="histoire" class="section-padding wow fadeInUp delay-05s">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -190,7 +201,7 @@
                     Nous sommes une <strong>entité autonome des Sauveteurs en Mer</strong> (SNSM) - association reconnue d'utilité publique assurant le sauvetage des vies humaines en mer. Nous formons le public francilien aux <strong>premiers secours</strong>, au sauvetage et sommes un <strong>maillon de la sécurité civile</strong> en Ile-de-France.<br><br>
                     <strong>Initié en 1958</strong>, le Centre de Formation d'Ile-de-France forme dès cette époque des bénévoles secouriste-marins. Ils sont alors à disposition des organisateurs de manifestations nautiques pour assurer la surveillance des plans d'eau.<br><br>
                     De nombreuses évolutions techniques et législatives se sont succédées depuis sa création mais notre Centre de Formation a toujours su évoluer et se moderniser. En 60 ans, nous avons formé <strong>plus de 1500 sauveteurs</strong> soit autant de <strong>secouristes</strong>.<br><br>
-                    Animé <strong>uniquement</strong> par des <strong>bénévoles</strong>, notre centre assure continuellement des postes de secours nautiques ou terrestres afin de conserver la <strong>qualité opérationnelle</strong> de ses équipes
+                    Animé <strong>uniquement</strong> par des <strong>bénévoles</strong>, notre centre assure continuellement des <strong>postes de secours</strong> nautiques ou terrestres et maintient ainsi la <strong>qualité opérationnelle</strong> de ses équipes
                     <!-- <a href="">learn more...</a> -->
                 </div>
             </div>
@@ -229,65 +240,65 @@
 <!---->
 <!---->
 
-<section id="portfolio" class="section-padding wow fadeInUp delay-05s">
+<section id="atouts" class="section-padding wow fadeInUp delay-05s">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2 class="service-title pad-bt15">Nos points forts</h2>
-                <p class="sub-title pad-bt15">Nous avons plusieurs compétences. N'hésitez pas à filter nos atouts par centre d'intérêt.</p>
+                <p class="sub-title pad-bt15">Nous choisir, c'est compter sur l'un des 6 atouts suivants :</p>
                 <hr class="bottom-line">
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15 rounded">
+            <div class="col-md-4 col-xs-6 portfolio-item padding-right-zero mr-btn-15 text-justify">
                 <figure>
-                    <img src="img/cergy.jpg" class="img-responsive">
+                    <img src="img/dps.jpg" class="img-responsive">
                     <figcaption>
-                        <h2>Entrainements réguliers</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                        <h2>Expérience</h2>
+                        <p>Nos secouristes et sauveteurs opèrent professionnellement chaque été en plus des postes qu'ils assurent pour vous en Ile de France.</p>
                     </figcaption>
                 </figure>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <div class="col-md-4 col-xs-6 portfolio-item padding-right-zero mr-btn-15">
                 <figure>
-                    <img src="img/dartagnan.jpg" class="img-responsive">
-                    <figcaption>
-                        <h2>100+ sauveteurs</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-                <figure>
-                    <img src="img/irb.jpg" class="img-responsive">
+                    <img src="img/equipement.jpg" class="img-responsive">
                     <figcaption>
                         <h2>Matériel adapté</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                        <p>Nous sommes équipés d'une grande diversité de matériels spécialisés conçus tout spécialement pour les 8000 sauveteurs SNSM. </p>
                     </figcaption>
                 </figure>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <div class="col-md-4 col-xs-6 portfolio-item padding-right-zero mr-btn-15">
                 <figure>
-                    <img src="img/nd.jpg" class="img-responsive">
+                    <img src="img/duster.jpg" class="img-responsive">
                     <figcaption>
-                        <h2>Grande connaissance de la Seine</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                        <h2>Mobilité</h2>
+                        <p>Nos nombreux moyens logistiques nous permettent de déplacer tout notre matériel sur le lieu de votre événement</p>
                     </figcaption>
                 </figure>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-                <figure>
-                    <img src="img/philou.jpg" class="img-responsive">
-                    <figcaption>
-                        <h2>Professionnalisme</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <div class="col-md-4 col-xs-6 portfolio-item padding-right-zero mr-btn-15">
                 <figure>
                     <img src="img/sup.jpg" class="img-responsive">
                     <figcaption>
-                        <h2>Mobilité</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                        <h2>Grande connaissance de la Seine</h2>
+                        <p>Les sauveteurs de notre structure sont présents toutes les semaines sur la Seine et s'entraînent une fois par an en stade d'eaux vives</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-xs-6 portfolio-item padding-right-zero mr-btn-15">
+                <figure>
+                    <img src="img/bateaux2.jpg" class="img-responsive">
+                    <figcaption>
+                        <h2>Capacité infinie</h2>
+                        <p>Nous pouvons mobiliser les 32 centres d'intervention SNSM français et ainsi déployer un grand nombre moyens et de personnels</p> <!-- pour votre événement</p> -->
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-xs-6 portfolio-item padding-right-zero mr-btn-15">
+                <figure>
+                    <img src="img/cergy.jpg" class="img-responsive">
+                    <figcaption>
+                        <h2>Secouristes aguéris</h2>
+                        <p> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
                     </figcaption>
                 </figure>
             </div>
@@ -385,135 +396,86 @@
             </div>
         </section>
 
+<section id="partners" class="wow fadeInUp delay-05s">
+    <div class="overlay_line">
+        <!-- <div class="row">
+            <div class="col-xs-12 text-center white">
+                <h3>PARTENAIRES</h3>
+            <ul class='list-inline'>
+                <li><img src="img/ser01.png" alt="hey"></li>
+                <li><img src="img/ser02.png" alt="hey"></li>
+                <li><img src="img/ser03.png" alt="hey"></li>
+            </ul>
+            </div>
+        </div> -->
 
 
+    <div class="lineBlack">
+            <div class="container white text-center">
+                <div class="row footer">
+                    <div class="col-md-12">
+                        <h3>Suivez-nous sur les réseaux sociaux</h3>
+                        <p>Nos sauveteurs sont actifs toute l'année, apprenez à les connaître !</p>
+                        <!--<div class="fr">
+                        <div style="display: inline-block;">
+                            <input class="col-md-6 fEmail" name='Email' placeholder='Enter Your Email'/>
+                            <a href="#" class="subS">Subscribe!</a>
+                        </div>
+                    </div>-->
+                    </div>
+                    <div class="soc col-md-12">
+                        <ul>
+                            <!-- <li class="soc1"><a href="#"></a></li> -->
+                            <li class="soc8 circle"><a href="https://www.snsm.org/etablissement/cfi-paris-ile-de-france/">www</a></li>
+                            <li class="soc2 circle"><a href="https://www.facebook.com/snsm.cfipif"><i class="fa fa-facebook fa-fw pull-left fa-2x"></i></a></li>
+                            <li class="soc3 circle"><a href="https://twitter.com/snsm_cfipif"><i class="fa fa-twitter fa-fw pull-left fa-2x"></i></a></li>
+                            <!-- <li class="soc4"><a href="#"></a></li>
+                            <li class="soc5"><a href="#"></a></li>
+                            <li class="soc6"><a href="#"></a></li>
+                            <li class="soc7"><a href="#"></a></li>
+                            <li class="soc8"><a href="#"></a></li> -->
 
-
-
-        <!-- <section id="contact" class="section-padding wow fadeInUp delay-05s">
-        <div class="container">
-        <div class="row">
-        <div class="col-md-12 text-center white">
-        <h2 class="service-title pad-bt15">CONTACTEZ NOUS MAINTENANT</h2>
-        <p class="sub-title pad-bt15">Vous souhaitez mettre en place une <strong>formation pour vos collaborateurs</strong> ou bien faire <strong>encadrer un de vos événements</strong> ?<br>Utilisez le formulaire ci-dessous pour nous faire part de votre demande.</p>
-        <hr class="bottom-line white-bg">
-    </div>
-    <div class="col-md-6 col-sm-6 col-xs-12">
-    <div class="loction-info white">
-    <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>4 rue de St Cloud<br>92310 SEVRES</p>
-    <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>contact.cfipif@snsm.org</p>
-    <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>01 46 29 01 43</p>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class="contact-form">
-<div id="sendmessage">Votre message vient d'être envoyé. Nous vous répondrons aussi vite que possible !</div>
-<div id="errormessage"></div>
-<form action="" method="post" role="form" class="contactForm">
-<div class="col-md-6 padding-right-zero">
-<div class="form-group">
-<input type="text" name="name" class="form-control" id="name" placeholder="Societe" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-<div class="validation"></div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="form-group">
-<input type="email" class="form-control" name="email" id="email" placeholder="Votre email" data-rule="email" data-msg="Please enter a valid email" />
-<div class="validation"></div>
-</div>
-</div>
-<div class="col-md-12">
-<div class="form-group">
-<input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-<div class="validation"></div>
-</div>
-</div>
-<div class="col-md-12">
-<div class="form-group">
-<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-<div class="validation"></div>
-</div>
-<button type="submit" class="btn btn-primary btn-submit">ENVOYER</button>
-</div>
-</form>
-
-</div>
-</div>
-</div>
-</div>
-</section> -->
-
-<section id="testimonial" class="wow fadeInUp delay-05s">
-    <div class="bg-testicolor">
-        <div class="container section-padding">
-            <div class="row">
-                <div class="testimonial-item">
-                    <ul class="bxslider">
-                        <li>
-                            <blockquote>
-                                <img src="img/thumb.png" class="img-responsive">
-                                <p>Come a day there won't be room for naughty men like us to slip about at all. This job goes south, there well may not be another. </p>
-                            </blockquote>
-                            <small>Shaun Paul, Client</small>
-                        </li>
-                        <li>
-                            <blockquote>
-                                <img src="img/thumb.png" class="img-responsive">
-                                <p>So here is us, on the raggedy edge. Don't push me, and I won't push you. </p>
-                            </blockquote>
-                            <small>Marry Smith, Client</small>
-                        </li>
-                        <li>
-                            <blockquote>
-                                <img src="img/thumb.png" class="img-responsive">
-                                <p>Come a day there won't be room for naughty men like us to slip about at all. This job goes south, there well may not be another.</p>
-                            </blockquote>
-                            <small>Vivek Singh, Client</small>
-                        </li>
-                        <li>
-                            <blockquote>
-                                <img src="img/thumb.png" class="img-responsive">
-                                <p>So here is us, on the raggedy edge. Don't push me, and I won't push you.</p>
-                            </blockquote>
-                            <small>John Doe, Client</small>
-                        </li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+			<div class="container">
+				<div class="row downLine">
+					<!--<div class="col-md-12 text-right">-->
+						<!--<input  id="searchPattern" type="search" name="pattern" value="Search the Site" onblur="if(this.value=='') {this.value='Search the Site'; }" onfocus="if(this.value =='Search the Site' ) this.value='';this.style.fontStyle='normal';" style="font-style: normal;"/-->
+						<!--<input  id="searchPattern" type="search" placeholder="Search the Site"/><i class="glyphicon glyphicon-search" style="font-size: 13px; color:#a5a5a5;" id="iS"></i>
+					</div>-->
+					<div class="col-sm-5 text-left copy">
+						<small>Inspired by <a href="https://bootstrapmade.com/">Baker</a> and Timber templates.</small>
+					</div>
+					<div class="col-sm-7 text-right">
+						<ul id="downMenu" class='list-inline downMenu'>
+							<li class="active"><a href="#main-header">Accueil</a></li>
+							<li><a href="#presta">Prestations</a></li>
+							<li><a href="#histoire">Historique</a></li>
+							<li><a href="#atouts">Points forts</a></li>
+							<li class="last"><a href="#contact">Contact</a></li>
+							<!--li><a href="#features">Features</a></li-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
     </div>
 </section>
 
 <!---->
 <!---->
-<footer id="footer">
-    <div class="container">
-        <div class="row text-center">
-            <p>&copy; Baker Theme. All Rights Reserved.</p>
-            <div class="credits">
-                <!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Baker
-            -->
-            Designed  by <a href="https://bootstrapmade.com/">Bootstrap Themes</a>
-        </div>
-    </div>
-</div>
-</footer>
 <!---->
-</div>
+<!-- </div> -->
+
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="contactform/contactform.js"></script>
-<!-- <script>$('#exampleModal').on('shown.bs.modal', function () {
-$('#myModal').focus()
-})
-</script> -->
+<!-- <script src="contactform/contactform.js"></script> -->
 </body>
 </html>
