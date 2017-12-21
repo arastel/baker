@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SNSM Ile de France</title>
-    <meta name="description" content="Site vitrine SNSM CFI PIF">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <meta name="description" content="La SNSM de Paris Ile-de-France et ses secouristes réalisent des postes de secours en IDF lors de concerts, soirées, événements sportifs, etc. Explorez l'ensemble de nos prestations sur ce site.">
+    <meta name="keywords" content="SNSM, secouriste, poste de secours, DSP, DSNP, PS, premiers secours, Gestes Qui Sauvent, PSE, PSC1, Croix Rouge, Protection Civile">
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
@@ -33,43 +33,43 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="col-xs-10 modal-title" id="exampleModalLabel">Demande de rappel</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- <div class="row"> -->
-                    <form method="POST" action="http://formspree.io/***">
-                        <select required id="select" type="text" class="col-md-12 col-xs-12 Subject" name='_subject'>
-                            <option value="" disabled selected>Objet de l'appel</option>
-                            <option value="DEMANDE D'APPEL - Poste de secours terrestre">Poste de secours terrestre</option>
-                            <option value="DEMANDE D'APPEL - Poste de secours nautique">Poste de secours nautique</option>
-                            <option value="DEMANDE D'APPEL - Formation Premiers Secours">Formation Premiers Secours</option>
-                            <option value="DEMANDE D'APPEL - Demande de renseignements">Demande de renseignements</option>
-                            <option value="DEMANDE D'APPEL - Soutien financier">Soutien financier</option>
-                            <option value="DEMANDE D'APPEL - Autre">Autre</option>
-                        </select>
-                        <input required type="tel" class="col-xs-12 Email" name='Message' placeholder='Votre numéro de téléphone'/>
-                    <!-- </div> -->
-                    </form>
-                <!-- </div> -->
-                <br><br><br><br>
-                <strong>Attention : </strong>Nous ne rappelons que des numéros locaux, non spéciaux, gratuits.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn" data-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn btn-primary">Appelez-moi</button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <div class="row"> -->
+                        <form method="POST" action="http://formspree.io/***">
+                            <select required id="select" type="text" class="col-md-12 col-xs-12 Subject" name='_subject'>
+                                <option value="" disabled selected>Objet de l'appel</option>
+                                <option value="DEMANDE D'APPEL - Poste de secours terrestre">Poste de secours terrestre</option>
+                                <option value="DEMANDE D'APPEL - Poste de secours nautique">Poste de secours nautique</option>
+                                <option value="DEMANDE D'APPEL - Formation Premiers Secours">Formation Premiers Secours</option>
+                                <option value="DEMANDE D'APPEL - Demande de renseignements">Demande de renseignements</option>
+                                <option value="DEMANDE D'APPEL - Soutien financier">Soutien financier</option>
+                                <option value="DEMANDE D'APPEL - Autre">Autre</option>
+                            </select>
+                            <input required type="tel" class="col-xs-12 Email" name='Message' placeholder='Votre numéro de téléphone'/>
+                            <!-- </div> -->
+                        </form>
+                        <!-- </div> -->
+                        <br><br><br><br>
+                        <strong>Attention : </strong>Nous ne rappelons que des numéros locaux, non spéciaux, gratuits.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-primary">Appelez-moi</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal -->
+        <!-- Modal -->
 
 
 
 
-    <div class="loader"></div>
-    <!-- <div id="myDiv"> -->
+        <div class="loader"></div>
+        <!-- <div id="myDiv"> -->
         <!--HEADER-->
         <div class="header">
             <div class="bg-color">
@@ -106,8 +106,8 @@
                                 <h2 class="bnr-sub-title">Sollicitez la SNSM ! </h2>
                                 <p class="bnr-para">Présente dans les Hauts de Seine depuis 1958, la SNSM dispose de sauveteurs hautement qualifiés.<br>Dotés d'une grande expérience, il sauront encadrer au mieux vos événements terrestres ou nautiques.</p>
                                 <div class="brn-btn">
-                                    <a href="#presta"  class="btn btn-download" data-toggle="collapse"  data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Postes de secours</a>
-                                    <a href="#presta" class="btn btn-more" data-toggle="collapse"  data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Formations PS</a>
+                                    <a href="#presta"  class="btn btn-download" onclick="expand_dps()">Postes de secours</a>
+                                    <a href="#presta" class="btn btn-more" onclick="expand_ps()">Formations PS</a>
 
                                 </div>
                                 <div class="overlay-detail">
@@ -121,108 +121,140 @@
         </div>
         <!--/ HEADER-->
         <!---->
-        <section id="presta" class="section-padding wow fadeIn delay-05s">
+        <section id="presta" class="hovereffect section-padding wow fadeIn delay-05s">
+            <!-- ATTENTION LES DESCRIPTIONS COMPLEMENTAIRES SONT PRESENTES DANS CETTE SECTION ROW ET DANS CELLE DU DESSOUS-->
             <div class="container">
-                <div class="row hovereffect">
-        <div class="col-md-4 col-sm-12 col-xs-12 hoverelement">
-            <div class="my_overlay">
-            </div>
-            <div class="wrap-item text-center">
-                <div class="item-img">
-                    <!-- <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> -->
-                        <img src="img/pma_64.png">
-                    <!-- </a> -->
-                </div>
-                <h3 class="pad-bt15">Postes de secours terrestres</h3>
-                <p>Plus de 100 secouristes sont mobilisables dès maintenant en Ile de France pour assurer la sécurité de votre événement</p>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12 hoverelement">
-            <div class="my_overlay">
-            </div>
-            <div class="wrap-item text-center">
-                <div class="item-img">
-                    <img src="img/irb_64.png">
-                </div>
-                <h3 class="pad-bt15">Postes de secours nautiques</h3>
-                <p>80 sauveteurs hautement qualifiés arment chaque semaine des postes de secours nautiques en milieux naturels (Seine, Marne, Oise...)</p>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12 hoverelement">
-            <div class="my_overlay">
-            </div>
-            <div class="wrap-item text-center">
-                <div class="item-img">
-                    <img src="img/pse_64.png">
-                </div>
-                <h3 class="pad-bt15">Formations Premiers Secours</h3>
-                <p>23 moniteurs de secourisme forment différents publics aux gestes de secours et délivrent les diplômes correspondants</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Essai de collapse -->
-
-    <div class="row">
-        <div class="collapse" id="collapseExample">
-            <div class="wrap-item text-center">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-        </div>
-    </div>
-
-    <!-- Fin d'essai -->
-</div>
-</section>
-<!---->
-<!---->
-<section id="histoire" class="section-padding wow fadeInUp delay-05s">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2 class="service-title pad-bt15">Qui sommes-nous ?</h2>
-                <p class="sub-title pad-bt15">Association agréée de Sécurité Civile – Basée dans les Hauts de Seine</p>
-                <hr class="bottom-line">
-            </div>
-            <div class="col-md-4 col-sm-6-center col-xs-8-center">
-                <div class="wrap-item text-center">
-                    <div class="item-img">
-                        <img src="img/cfi_t.png" class="img-responsive center-block">
+                <div class="row">
+                    <div onmouseover="expand_dps()" class="col-md-4 col-sm-12 hoverelement">
+                        <div class="my_overlay">
+                        </div>
+                        <div id="expand_dps" class="wrap-item text-center">
+                            <div class="item-img">
+                                <!-- <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> -->
+                                <img src="img/pma_64.png">
+                                <!-- </a> -->
+                            </div>
+                            <h3 class="pad-bt15">Postes de secours terrestres</h3>
+                            <p>Plus de 100 secouristes sont mobilisables dès maintenant en Ile de France pour assurer la sécurité de votre événement</p>
+                        </div>
+                    </div>
+                    <div class="plus_dps col-sm-12 hidden hidden-sm hidden-md hidden-lg" id="plus_dps">
+                        <div class="text-center">
+                            DPS Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            <br/>
+                        </div>
+                    </div>
+                    <div onmouseover="expand_nautique()" class="col-md-4 col-sm-12 hoverelement">
+                        <div class="my_overlay">
+                        </div>
+                        <div class="wrap-item text-center">
+                            <div class="item-img">
+                                <img src="img/irb_64.png">
+                            </div>
+                            <h3 class="pad-bt15">Postes de secours nautiques</h3>
+                            <p>80 sauveteurs hautement qualifiés arment chaque semaine des postes de secours nautiques en milieux naturels (Seine, Marne, Oise...)</p>
+                        </div>
+                    </div>
+                    <div class="plus_nautique col-sm-12 hidden hidden-sm hidden-md hidden-lg" id="plus_nautique">
+                        <div class="text-center">
+                            Nautique Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            <br/>
+                        </div>
+                    </div>
+                    <div onmouseover="expand_ps()" class="col-md-4 col-sm-12 hoverelement">
+                        <div class="my_overlay">
+                        </div>
+                        <div class="wrap-item text-center">
+                            <div class="item-img">
+                                <img src="img/pse_64.png">
+                            </div>
+                            <h3 class="pad-bt15">Formations Premiers Secours</h3>
+                            <p>23 moniteurs de secourisme forment différents publics aux gestes de secours et délivrent les diplômes correspondants</p>
+                        </div>
+                    </div>
+                    <div class="plus_ps col-sm-12 hidden hidden-sm hidden-md hidden-lg" id="plus_ps">
+                        <div class="text-center">
+                            PS Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            <br/>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-8 hidden-md hidden-sm hidden-xs">
-                <div class="service-item text-justify">
-                    <br>
+
+                <!-- Essai de collapse -->
+
+                <div class="row">
+                    <div class="plus_dps hidden hidden-xs" id="plus_dps">
+                        <hr class="bottom-line">
+                        <div class="text-center">
+                            DPS Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                    <div class="plus_nautique hidden hidden-xs" id="plus_nautique">
+                        <hr class="bottom-line">
+                        <div class="text-center">
+                            Nautique Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                    <div class="plus_ps hidden hidden-xs" id="plus_ps">
+                        <hr class="bottom-line">
+                        <div class="text-center">
+                            PS Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Fin d'essai -->
             </div>
-            <div class="col-md-8 col-sm-12-center col-xs-12-center">
-                <div class="service-item text-justify">
-                    Nous sommes une <strong>entité autonome des Sauveteurs en Mer</strong> (SNSM) - association reconnue d'utilité publique assurant le sauvetage des vies humaines en mer. Nous formons le public francilien aux <strong>premiers secours</strong>, au sauvetage et sommes un <strong>maillon de la sécurité civile</strong> en Ile-de-France.<br><br>
-                    <strong>Initié en 1958</strong>, le Centre de Formation d'Ile-de-France forme dès cette époque des bénévoles secouriste-marins. Ils sont alors à disposition des organisateurs de manifestations nautiques pour assurer la surveillance des plans d'eau.<br><br>
-                    De nombreuses évolutions techniques et législatives se sont succédées depuis sa création mais notre Centre de Formation a toujours su évoluer et se moderniser. En 60 ans, nous avons formé <strong>plus de 1500 sauveteurs</strong> soit autant de <strong>secouristes</strong>.<br><br>
-                    Animé <strong>uniquement</strong> par des <strong>bénévoles</strong>, notre centre assure continuellement des <strong>postes de secours</strong> nautiques ou terrestres et maintient ainsi la <strong>qualité opérationnelle</strong> de ses équipes
-                    <!-- <a href="">learn more...</a> -->
+        </section>
+        <!---->
+        <!---->
+        <section id="histoire" class="section-padding wow fadeInUp delay-05s" onmouseenter="hide_plus()">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="service-title pad-bt15">Qui sommes-nous ?</h2>
+                        <p class="sub-title pad-bt15">Association agréée de Sécurité Civile – Basée dans les Hauts de Seine</p>
+                        <hr class="bottom-line">
+                    </div>
+                    <div class="col-md-4 col-sm-6-center col-xs-8-center">
+                        <div class="wrap-item text-center">
+                            <div class="item-img">
+                                <img src="img/cfi_t.png" class="img-responsive center-block">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 hidden-md hidden-sm hidden-xs">
+                        <div class="service-item text-justify">
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12-center col-xs-12-center">
+                        <div class="service-item text-justify">
+                            Nous sommes une <strong>entité autonome des Sauveteurs en Mer</strong> (SNSM) - association reconnue d'utilité publique assurant le sauvetage des vies humaines en mer. Nous formons le public francilien aux <strong>premiers secours</strong>, au sauvetage et sommes un <strong>maillon de la sécurité civile</strong> en Ile-de-France.<br><br>
+                            <strong>Initié en 1958</strong>, le Centre de Formation d'Ile-de-France forme dès cette époque des bénévoles secouriste-marins. Ils sont alors à disposition des organisateurs de manifestations nautiques pour assurer la surveillance des plans d'eau.<br><br>
+                            De nombreuses évolutions techniques et législatives se sont succédées depuis sa création mais notre Centre de Formation a toujours su évoluer et se moderniser. En 60 ans, nous avons formé <strong>plus de 1500 sauveteurs</strong> soit autant de <strong>secouristes</strong>.<br><br>
+                            Animé <strong>uniquement</strong> par des <strong>bénévoles</strong>, notre centre assure continuellement des <strong>postes de secours</strong> nautiques ou terrestres et maintient ainsi la <strong>qualité opérationnelle</strong> de ses équipes
+                            <!-- <a href="">learn more...</a> -->
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-8 col-sm-12-center col-xs-12-center">
+                    <div class="service-item text-justify">
+                    <h3><span>F</span>ormation et intervention</h3>
+                    <p>CFI signifie Centre de Formation et d'Intervention. Animé uniquement par des bénévoles, notre centre assure continuellement des postes de secours nautiques ou terrestres afin de conserver la qualité opérationnelle de ses équipes. </p>
                 </div>
-            </div>
-            <!-- <div class="col-md-8 col-sm-12-center col-xs-12-center">
-            <div class="service-item text-justify">
-            <h3><span>F</span>ormation et intervention</h3>
-            <p>CFI signifie Centre de Formation et d'Intervention. Animé uniquement par des bénévoles, notre centre assure continuellement des postes de secours nautiques ou terrestres afin de conserver la qualité opérationnelle de ses équipes. </p>
+            </div> -->
+            <!-- <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-item">
+            <h3><span>W</span>ebsite Maintenance</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="">learn more...</a>
         </div>
-    </div> -->
-    <!-- <div class="col-md-3 col-sm-6 col-xs-12">
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
     <div class="service-item">
-    <h3><span>W</span>ebsite Maintenance</h3>
+    <h3><span>S</span>eo Optimization</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <a href="">learn more...</a>
-</div>
-</div>
-<div class="col-md-3 col-sm-6 col-xs-12">
-<div class="service-item">
-<h3><span>S</span>eo Optimization</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<a href="">learn more...</a>
 </div>
 </div>
 <div class="col-md-3 col-sm-6 col-xs-12">
@@ -328,12 +360,12 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-12 col-xs-12 forma">
                         <form method="POST" action="http://formspree.io/***">
-                        <!-- <div class="col-md-6 col-sm-12 col-xs-12"> -->
+                            <!-- <div class="col-md-6 col-sm-12 col-xs-12"> -->
                             <input required type="text" class="col-md-5 col-sm-12 col-xs-12 name" name='name' placeholder='Nom complet*'/>
-                        <!-- </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12"> -->
+                            <!-- </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12"> -->
                             <input required type="email" class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12 Email" name='_replyto' placeholder='Email *'/>
-                        <!-- </div> -->
+                            <!-- </div> -->
                             <!-- <input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Subject'/> -->
                             <select required id="select" type="text" class="col-md-12 col-xs-12 Subject" name='_subject'>
                                 <option value="" disabled selected>Objet de votre demande *</option>
@@ -367,8 +399,8 @@
                             </div>
                             <div class="col-sm-offset-0 col-md-12 col-sm-offset-1 col-sm-5 col-xs-12">
                                 <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>01 46 29 01 43</p>
-                                <p><a href="#"><i class="fa fa-twitter fa-fw pull-left fa-2x"></i>Twitter</p></a>
-                                <p><a href="#"><i class="fa fa-facebook-square fa-fw pull-left fa-2x"></i>Facebook</p></a>
+                                <p><a href="https://twitter.com/snsm_cfipif"><i class="fa fa-twitter fa-fw pull-left fa-2x"></i>Twitter</p></a>
+                                <p><a href="https://www.facebook.com/snsm.cfipif/"><i class="fa fa-facebook-square fa-fw pull-left fa-2x"></i>Facebook</p></a>
                             </div>
                         </div>
                     </div>
@@ -378,91 +410,86 @@
             <div class="container">
                 <div class="row rappel">
                     <div class="col-xs-12 hidden-sm hidden-md hidden-lg text-center call_small">
-                            <p><strong>Vous avez besoin d'une réponse rapide ? </strong></p>
+                        <p><strong>Vous avez besoin d'une réponse rapide ? </strong></p>
                         <!-- <a href="">learn more...</a> -->
                     </div>
                     <div class="col-md-offset-2 col-sm-offset-1 col-md-5 col-sm-6 hidden-xs vcenter">
-                            <p><strong>Vous avez besoin d'une réponse rapide ? </strong></p>
+                        <p><strong>Vous avez besoin d'une réponse rapide ? </strong></p>
                         <!-- <a href="">learn more...</a> -->
                     </div><!--
                     --><div class="col-md-4 col-sm-4 hidden-xs vcenter">
-                        <a data-toggle="modal" href="#myModal" class="btn btn-download"><i class="fa fa-phone fa-fw pull-left fa-2x hidden-sm"></i>Demandez à être rappelé </a>
-                    </div>
-                    <div class="col-xs-12 hidden-sm hidden-md hidden-lg call_small text-center">
-                        <a data-toggle="modal" href="#myModal" class="btn btn-download">Demandez à être rappelé</a>
-                    </div>
-
+                    <a data-toggle="modal" href="#myModal" class="btn btn-download"><i class="fa fa-phone fa-fw pull-left fa-2x hidden-sm"></i>Demandez à être rappelé </a>
                 </div>
-            </div>
-        </section>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg call_small text-center">
+                    <a data-toggle="modal" href="#myModal" class="btn btn-download">Demandez à être rappelé</a>
+                </div>
 
-<section id="partners" class="wow fadeInUp delay-05s">
-    <div class="overlay_line">
-        <!-- <div class="row">
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="wow fadeInUp delay-05s">
+        <div class="overlay_line">
+            <!-- <div class="row">
             <div class="col-xs-12 text-center white">
-                <h3>PARTENAIRES</h3>
+            <h3>PARTENAIRES</h3>
             <ul class='list-inline'>
-                <li><img src="img/ser01.png" alt="hey"></li>
-                <li><img src="img/ser02.png" alt="hey"></li>
-                <li><img src="img/ser03.png" alt="hey"></li>
-            </ul>
-            </div>
-        </div> -->
-
-
-    <div class="lineBlack">
-            <div class="container white text-center">
-                <div class="row footer">
-                    <div class="col-md-12">
-                        <h3>Suivez-nous sur les réseaux sociaux</h3>
-                        <p>Nos sauveteurs sont actifs toute l'année, apprenez à les connaître !</p>
-                        <!--<div class="fr">
-                        <div style="display: inline-block;">
-                            <input class="col-md-6 fEmail" name='Email' placeholder='Enter Your Email'/>
-                            <a href="#" class="subS">Subscribe!</a>
-                        </div>
-                    </div>-->
-                    </div>
-                    <div class="soc col-md-12">
-                        <ul>
-                            <!-- <li class="soc1"><a href="#"></a></li> -->
-                            <li class="soc8 circle"><a href="https://www.snsm.org/etablissement/cfi-paris-ile-de-france/">www</a></li>
-                            <li class="soc2 circle"><a href="https://www.facebook.com/snsm.cfipif"><i class="fa fa-facebook fa-fw pull-left fa-2x"></i></a></li>
-                            <li class="soc3 circle"><a href="https://twitter.com/snsm_cfipif"><i class="fa fa-twitter fa-fw pull-left fa-2x"></i></a></li>
-                            <!-- <li class="soc4"><a href="#"></a></li>
-                            <li class="soc5"><a href="#"></a></li>
-                            <li class="soc6"><a href="#"></a></li>
-                            <li class="soc7"><a href="#"></a></li>
-                            <li class="soc8"><a href="#"></a></li> -->
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-				<div class="row downLine">
-					<!--<div class="col-md-12 text-right">-->
-						<!--<input  id="searchPattern" type="search" name="pattern" value="Search the Site" onblur="if(this.value=='') {this.value='Search the Site'; }" onfocus="if(this.value =='Search the Site' ) this.value='';this.style.fontStyle='normal';" style="font-style: normal;"/-->
-						<!--<input  id="searchPattern" type="search" placeholder="Search the Site"/><i class="glyphicon glyphicon-search" style="font-size: 13px; color:#a5a5a5;" id="iS"></i>
-					</div>-->
-					<div class="col-sm-5 text-left copy">
-						<small>Inspired by <a href="https://bootstrapmade.com/">Baker</a> and Timber templates.</small>
-					</div>
-					<div class="col-sm-7 text-right">
-						<ul id="downMenu" class='list-inline downMenu'>
-							<li class="active"><a href="#main-header">Accueil</a></li>
-							<li><a href="#presta">Prestations</a></li>
-							<li><a href="#histoire">Historique</a></li>
-							<li><a href="#atouts">Points forts</a></li>
-							<li class="last"><a href="#contact">Contact</a></li>
-							<!--li><a href="#features">Features</a></li-->
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
+            <li><img src="img/ser01.png" alt="hey"></li>
+            <li><img src="img/ser02.png" alt="hey"></li>
+            <li><img src="img/ser03.png" alt="hey"></li>
+        </ul>
     </div>
+</div> -->
+
+
+<div class="lineBlack">
+    <div class="container white text-center">
+        <div class="row footer">
+            <div class="col-md-12">
+                <h3>Suivez-nous sur les réseaux sociaux</h3>
+                <p>Nos sauveteurs sont actifs toute l'année, apprenez à les connaître !</p>
+
+            </div>
+            <div class="soc col-md-12">
+                <ul>
+                    <!-- <li class="soc1"><a href="#"></a></li> -->
+                    <li class="soc8 circle"><a href="https://www.snsm.org/etablissement/cfi-paris-ile-de-france/">www</a></li>
+                    <li class="soc2 circle"><a href="https://www.facebook.com/snsm.cfipif"><i class="fa fa-facebook fa-fw pull-left fa-2x"></i></a></li>
+                    <li class="soc3 circle"><a href="https://twitter.com/snsm_cfipif"><i class="fa fa-twitter fa-fw pull-left fa-2x"></i></a></li>
+                    <!-- <li class="soc4"><a href="#"></a></li>
+                    <li class="soc5"><a href="#"></a></li>
+                    <li class="soc6"><a href="#"></a></li>
+                    <li class="soc7"><a href="#"></a></li>
+                    <li class="soc8"><a href="#"></a></li> -->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row downLine">
+            <!--<div class="col-md-12 text-right">-->
+            <!--<input  id="searchPattern" type="search" name="pattern" value="Search the Site" onblur="if(this.value=='') {this.value='Search the Site'; }" onfocus="if(this.value =='Search the Site' ) this.value='';this.style.fontStyle='normal';" style="font-style: normal;"/-->
+            <!--<input  id="searchPattern" type="search" placeholder="Search the Site"/><i class="glyphicon glyphicon-search" style="font-size: 13px; color:#a5a5a5;" id="iS"></i>
+        </div>-->
+        <div class="col-sm-5 text-left copy">
+            <small>Inspired by <a href="https://bootstrapmade.com/">Baker</a> and Timber templates.</small>
+        </div>
+        <div class="col-sm-7 text-right">
+            <ul id="downMenu" class='list-inline downMenu'>
+                <li class="active"><a href="#main-header">Accueil</a></li>
+                <li><a href="#presta">Prestations</a></li>
+                <li><a href="#histoire">Historique</a></li>
+                <li><a href="#atouts">Points forts</a></li>
+                <li class="last"><a href="#contact">Contact</a></li>
+                <!--li><a href="#features">Features</a></li-->
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
 </section>
 
 <!---->
@@ -470,6 +497,7 @@
 <!---->
 <!-- </div> -->
 
+<script src="js/toggle_desc.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
